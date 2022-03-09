@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nooran kahvikauppa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" th:href="@{/css/layout.css}" />
+  </head>
+  <body>
+    <header th:replace="fragments/header :: header">
+      <p></p>
+    </header>
+    <nav th:replace="fragments/admin-nav :: admin-nav">
+      <p></p>
+    </nav>
+
+    <section class="table-position">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Osaston id</th>
+            <th scope="col">Osaston nimi</th>
+            <th scope="col">OsastoIDP</th>
+            <!-- <th scope="col"></th> -->
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr th:if="${#lists.isEmpty(osastot)}">
+            <td colspan="5">No Records found. Add some...!</td>
+          </tr> -->
+
+          <tr th:each="osasto : ${osastot}">
+            <td th:text="${osasto.id}"></td>
+            <td th:text="${osasto.nimi}"></td>
+            <td th:text="${osasto.osastoIDP}"></td>
+            <!-- <td>
+              <button class="btn btn-danger">
+                <a th:href="|@{/osastot/poista/(osastoId=${osasto.id})}|"
+                  >Poista</a
+                >
+              </button>
+            </td> -->
+            <td>
+              <button class="btn btn-info">
+                <a th:href="|@{/osastot/editosasto/{id}(id=${osasto.id})}|"
+                  >Muokkaa</a
+                >
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="container">
+      <form th:action="@{/osastot}" method="POST">
+        <div class="row">
+          <div class="col-25">
+            <label for="nimi">Osaston nimi:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="nimi" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="osastoIDP">OsastoIDP:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="osastoIDP" />
+          </div>
+        </div>
+
+        <br />
+        <button type="submit" class="btn btn-primary">Lisää osasto</button>
+      </form>
+    </div>
+    <footer th:replace="fragments/footer :: footer">
+      <p class="footer"></p>
+    </footer>
+  </body>
+</html>
