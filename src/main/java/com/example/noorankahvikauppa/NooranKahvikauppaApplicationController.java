@@ -25,5 +25,20 @@ public class NooranKahvikauppaApplicationController {
   public String kulutustuotteet() {
     return "kulutustuotteet";
   }
+
+  @GetMapping("/osastot")
+  public String osastot() {
+    return "osastot";
+  }
+
+  @GetMapping("/toimittajat")
+  public String toimittajat() {
+    return "toimittajat";
+  }
+
+  @GetMapping("/valmistajat")
+  public String valmistajat() {
+    return "valmistajat";
+  }
   
 }
