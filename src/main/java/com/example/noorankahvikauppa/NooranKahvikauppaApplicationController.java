@@ -15,5 +15,15 @@ public class NooranKahvikauppaApplicationController {
   public String tuotteet() {
     return "tuotteet";
   }
+
+  @GetMapping("/kahvilaitteet")
+  public String kahvilaitteet() {
+    return "kahvilaitteet";
+  }
+
+  @GetMapping("/kulutustuotteet")
+  public String kulutustuotteet() {
+    return "kulutustuotteet";
+  }
   
 }
