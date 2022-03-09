@@ -9,5 +9,11 @@ public class NooranKahvikauppaApplicationController {
     @GetMapping("*")
     public String home() {
       return "index";
-  }  
+  }
+  
+  @GetMapping("/tuotteet")
+  public String tuotteet() {
+    return "tuotteet";
+  }
+  
 }
