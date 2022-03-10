@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nooran kahvikauppa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" th:href="@{/css/layout.css}" />
+  </head>
+  <body>
+    <header th:replace="fragments/header :: header">
+      <p>header with links etc</p>
+    </header>
+
+    <section class="page-container">
+      <button class="btn btn-dark takaisin">
+        <a href="./../../kahvilaitteet">Takaisin</a>
+      </button>
+      <section class="pageview container-tuotetiedot">
+        <section class="tuotetiedot">
+          <h2 class="h2-tuotetiedot">
+            <span th:text="${tuote.nimi}">nimi</span>
+          </h2>
+          <p><span th:text="${tuote.hinta}">hinta</span> €</p>
+          <p><span th:text="${tuote.valmistaja.nimi}">valmistaja</span></p>
+          <p class="tuotekuvaus">
+            <span th:text="${tuote.kuvaus}">kuvaus</span>
+          </p>
+        </section>
+        <figure class="tuotekuva">
+          <img th:src="@{/tuotetiedot/{id}/content(id=${tuote.id})}" />
+        </figure>
+      </section>
+    </section>
+    <footer th:replace="fragments/footer :: footer">
+      <p class="footer"></p>
+    </footer>
+
+    <!-- <p>Osasto: <span th:text="${tuote.osasto}">osasto</span></p> -->
+  </body>
+</html>
