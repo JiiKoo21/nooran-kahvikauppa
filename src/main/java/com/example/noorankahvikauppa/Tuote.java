@@ -8,7 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
-import org.hibernate.annotations.Type;
+//import org.hibernate.annotations.Type;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import lombok.AllArgsConstructor;
@@ -27,7 +27,7 @@ public class Tuote extends AbstractPersistable<Long> {
     
     // MUISTA STRING KUVA
     @Lob
-    @Type(type = "org.hibernate.type.BinaryType")
+    //@Type(type = "org.hibernate.type.BinaryType")
     @Basic(fetch = FetchType.EAGER)
     private byte[] kuva;
     
