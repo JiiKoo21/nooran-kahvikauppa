@@ -15,41 +15,17 @@
     <link rel="stylesheet" th:href="@{/css/layout.css}" />
   </head>
   <body>
-    <header>
-      <ul>
-        <li><a href="./kahvilaitteet">Kahvilaitteet</a></li>
-        <li><a href="./kulutustuotteet">Kulutustuotteet</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a href="">Rekisteröinti (VIP-asiakas)</a>
-        </li>
-        <li>
-          <a href="./tuotteet">Tietojen hallinnointi (admin)</a>
-        </li>
-      </ul>
+    <header th:replace="fragments/header :: header">
+      <p></p>
+    </header>
+    <main>
         <h1>Tervetuloa Nooran kahvikauppaan</h1>
         <h6>Kahvilaitteita ja kahvitteluun liittyviä kulutustuotteita</h6>
         <p>Ota yhteyttä: <a href="mailto:noorahaapanen@kahvikauppa.net">Noora Haapanen</a></p>
-    </header>
+    </main>
 
-    <section class="hero"></section>
-
-    <nav class="nav-grid">
-      <a href="./kahvilaitteet">
-        <h2 class="h2-center">Kahvilaitteet</h2>
-      </a>
-
-      <a href="./kulutustuotteet">
-        <h2 class="h2-center">Kulutustuotteet</h2>
-      </a>
-    </nav>
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
     </footer>
-
-    <!-- <h2><a href="./toimittajat">Toimittajat</a></h2>
-    <h2><a href="./valmistajat">Valmistajat</a></h2>
-    <h2><a href="./tuotteet">Tuotteet</a></h2> -->
   </body>
 </html>
