@@ -5,3 +5,18 @@ body {
 .punainenteksti {
     color: red;
 }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px;
+    padding: 2rem;
+    margin: 10px;
+    border: solid lightgray 3px;
+  }

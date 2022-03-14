@@ -38,7 +38,7 @@
       </ul>
     </nav>
 
-    <section class="flexContainer">
+    <section class="card-grid">
       <div class="card" th:each="kahvilaite : ${kahvilaitteet}">
         <img
           th:src="@{/kahvilaitteet/{id}/content(id=${kahvilaite.id})}"
