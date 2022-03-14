@@ -251,7 +251,7 @@ public String naytaEkaSivu(Model model) {
 @GetMapping("/kahvilaitteet/{sivunum}")
 public String naytaKahvilaitteet(Model model, @PathVariable(name = "sivunum") Integer sivunum) {
     List<Tuote> tuotteet = new ArrayList<Tuote>();
-    List<Long> kahvilaitteet = Arrays.asList(3L, 4L, 5L);
+    List<Long> kahvilaitteet = Arrays.asList(1L, 3L, 4L, 5L);
     Pageable pageable = PageRequest.of(sivunum - 1, 6);
     Page<Tuote> tuotesivut = tuoteService.listaaHalututTuotteet(kahvilaitteet, pageable);
     tuotteet = tuotesivut.getContent();
@@ -300,7 +300,7 @@ public String naytaKulutusEkaSivu(Model model) {
 @GetMapping("/kulutustuotteet/{sivunum}")
 public String naytaKulutustuotteet(Model model, @PathVariable(name = "sivunum") Integer sivunum) {
     List<Tuote> tuotteet = new ArrayList<Tuote>();
-    List<Long> kulutustuotteet = Arrays.asList(6L, 7L, 8L, 9L);
+    List<Long> kulutustuotteet = Arrays.asList(2L, 6L, 7L, 8L, 9L);
     Pageable pageable = PageRequest.of(sivunum - 1, 12);
     Page<Tuote> tuotesivut = tuoteService.listaaHalututTuotteet(kulutustuotteet, pageable);
     tuotteet = tuotesivut.getContent();
