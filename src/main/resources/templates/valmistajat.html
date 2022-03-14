@@ -39,14 +39,14 @@
                 ><span th:text="${valmistaja.url}"></span
               ></a>
             </td>
-            <!-- <td>
+            <td>
               <button class="btn btn-danger">
                 <a
                   th:href="|@{/valmistajat/poista/(valmistajaId=${valmistaja.id})}|"
                   >Poista</a
                 >
               </button>
-            </td> -->
+            </td>
             <td>
               <button class="btn btn-info">
                 <a th:href="|@{/valmistajat/muokkaa/{id}(id=${valmistaja.id})}|"

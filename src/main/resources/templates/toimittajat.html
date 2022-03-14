@@ -38,14 +38,14 @@
             <td th:text="${toimittaja.nimi}"></td>
             <td th:text="${toimittaja.yhteyshenkilo}"></td>
             <td th:text="${toimittaja.yhteyshenkiloemail}"></td>
-            <!-- <td>
+            <td>
               <button class="btn btn-danger">
                 <a
                   th:href="|@{/toimittajat/poista/(toimittajaId=${toimittaja.id})}|"
                   >Poista</a
                 >
               </button>
-            </td> -->
+            </td>
             <td>
               <button class="btn btn-info">
                 <a th:href="|@{/toimittajat/edit/{id}(id=${toimittaja.id})}|"
