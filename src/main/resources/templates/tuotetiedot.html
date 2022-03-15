@@ -19,19 +19,19 @@
     </header>
 
     <section class="page-container">
-      <button class="btn btn-dark takaisin">
+      <!-- <button class="btn btn-dark takaisin">
         <a href="./../../kahvilaitteet">Takaisin</a>
-      </button>
+      </button> -->
       <section class="pageview container-tuotetiedot">
         <section class="tuotetiedot">
           <h2 class="h2-tuotetiedot">
             <span th:text="${tuote.nimi}">nimi</span>
           </h2>
-          <p><span th:text="${tuote.hinta}">hinta</span> €</p>
-          <p><span th:text="${tuote.valmistaja.nimi}">valmistaja</span></p>
+          <!-- <p><span th:text="${tuote.valmistaja.nimi}">valmistaja</span></p> -->
           <p class="tuotekuvaus">
             <span th:text="${tuote.kuvaus}">kuvaus</span>
           </p>
+          <p><span th:text="${tuote.hinta}">hinta</span> e</p>
         </section>
         <figure class="tuotekuva">
           <img th:src="@{/tuotetiedot/{id}/content(id=${tuote.id})}" />

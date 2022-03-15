@@ -55,7 +55,7 @@
         <div class="card-body">
           <h5 class="card-title" th:text="${kulutustuote.nimi}"></h5>
           <p></p>
-            <span class="card-text" th:text="${kulutustuote.hinta}"></span> €
+            <span class="card-text" th:text="${kulutustuote.hinta}"></span> e
           </p>
           <a
             th:href="@{kulutustuotteet/tuotetiedot/{id}(id=${kulutustuote.id})}"

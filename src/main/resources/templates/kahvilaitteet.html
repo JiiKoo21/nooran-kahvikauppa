@@ -51,7 +51,7 @@
         <div class="card-body">
           <h5 class="card-title" th:text="${kahvilaite.nimi}"></h5>
           <p></p>
-            <span class="card-text" th:text="${kahvilaite.hinta}"></span> €
+            <span class="card-text" th:text="${kahvilaite.hinta}"></span> e
           </p>
           <a
             th:href="@{kahvilaitteet/tuotetiedot/{id}(id=${kahvilaite.id})}"
