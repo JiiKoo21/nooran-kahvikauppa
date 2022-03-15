@@ -62,18 +62,23 @@
         th:action="@{/tuotteet/edittuote/{id}(id=${tuote.id})}"
         th:object="${tuote}"
       >
-        <label for="nimi">Nimi</label>
-        <input type="text" th:field="*{nimi}" id="nimi" placeholder="Nimi" />
-        <label for="kuvaus">Kuvaus</label>
+      <div>
+        <label for="nimi">Nimi:</label>
+        <input type="text" th:field="*{nimi}" id="nimi" placeholder="Nimi" /> </div>
+        <div>
+        <label for="kuvaus">Kuvaus:</label>
         <input
           type="text"
           th:field="*{kuvaus}"
           id="kuvaus"
           placeholder="kuvaus"
-        />
-        <label for="hinta">hinta</label>
+        /> </div>
+        <div>
+        <label for="hinta">Hinta:</label>
         <input type="text" th:field="*{hinta}" id="hinta" placeholder="hinta" />
-        <label for="osasto">Osaston nimi:</label>
+      </div>
+      <div>
+        <label for="osasto">Osasto:</label>
         <select th:name="osastoID">
           <option selected>Valitse osasto</option>
           <option
@@ -82,6 +87,8 @@
             th:text="${osasto.nimi}"
           />
         </select>
+      </div>
+      <div>
         <label for="toimittajanimi">Toimittaja:</label>
         <select th:name="toimittajaID">
           <option selected>Valitse toimittaja</option>
@@ -91,6 +98,8 @@
             th:text="${toimittaja.nimi}"
           />
         </select>
+      </div>
+      <div>
         <label for="valmistajanimi">Valmistaja:</label>
         <select th:name="valmistajaID">
           <option selected>Valitse valmistaja</option>
@@ -100,9 +109,12 @@
             th:text="${valmistaja.nimi}"
           />
         </select>
+      </div>
+        <div>
         <button type="submit" class="btn btn-primary tuotenappi">
           Päivitä tuotteen tiedot
         </button>
+      </div>
       </form>
     </section>
     <footer th:replace="fragments/footer :: footer">

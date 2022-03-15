@@ -23,6 +23,7 @@
     </button>
 
     <section class="pageview">
+      <h2>Osastotiedot:</h2>
       <p>
         <span class="bold">Osaston nimi: </span>
         <span th:text="${osasto.nimi}">nimi</span>
@@ -42,19 +43,24 @@
         th:action="@{/osastot/editosasto/{id}(id=${osasto.id})}"
         th:object="${osasto}"
       >
-        <label for="nimi">Osastonimi</label>
+      <div>
+        <label for="nimi">Osastonimi:</label>
         <input type="text" th:field="*{nimi}" id="nimi" placeholder="Nimi" />
-        <label for="osastoIDP">Osasto IDP</label>
+      </div>
+        <div>
+        <label for="osastoIDP">Osasto IDP:</label>
         <input
           type="text"
           th:field="*{osastoIDP}"
           id="osastoIDP"
           placeholder="osastoIDP"
         />
-
+      </div>
+      <div>
         <button type="submit" class="btn btn-primary tuotenappi">
           Päivitä osaston tiedot
         </button>
+      </div>
       </form>
     </section>
     <footer th:replace="fragments/footer :: footer">

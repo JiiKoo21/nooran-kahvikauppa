@@ -23,6 +23,7 @@
     </button>
 
     <section class="pageview">
+      <h2>Valmistajatiedot:</h2>
       <p>
         <span class="bold">Nimi: </span>
         <span th:text="${valmistaja.nimi}">nimi</span>
@@ -37,13 +38,19 @@
         th:action="@{/valmistajat/muokkaa/{id}(id=${valmistaja.id})}"
         th:object="${valmistaja}"
       >
-        <label for="nimi">Nimi</label>
+      <div>
+        <label for="nimi">Nimi:</label>
         <input type="text" th:field="*{nimi}" id="nimi" placeholder="Nimi" />
-        <label for="url">Url</label>
+      </div>
+      <div>
+        <label for="url">Url:</label>
         <input type="text" th:field="*{url}" id="url" placeholder="url" />
+      </div>
+      <div>
         <button type="submit" class="btn btn-primary tuotenappi">
           Päivitä valmistajan tiedot
         </button>
+      </div>
       </form>
     </section>
 

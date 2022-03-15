@@ -23,6 +23,7 @@
     </button>
 
     <section class="pageview">
+      <h2>Toimittajatiedot:</h2>
       <p>
         <span class="bold">Toimittajan nimi: </span>
         <span th:text="${toimittaja.nimi}">nimi</span>
@@ -41,26 +42,33 @@
         method="POST"
         th:action="@{/toimittajat/edit/{id}(id=${toimittaja.id})}"
         th:object="${toimittaja}"
-      >
-        <label for="nimi">Nimi</label>
+      ><div>
+        <label for="nimi">Nimi:</label>
         <input type="text" th:field="*{nimi}" id="nimi" placeholder="Nimi" />
-        <label for="yhteyshenkilo">Yhteyshenkilön nimi</label>
+      </div>
+      <div>
+        <label for="yhteyshenkilo">Yhteyshenkilön nimi:</label>
         <input
           type="text"
           th:field="*{yhteyshenkilo}"
           id="yhteyshenkilo"
           placeholder="yhteyshenkilo"
         />
-        <label for="yhteyshenkiloemail">Yhteyshenkilön email</label>
+      </div>
+      <div>
+        <label for="yhteyshenkiloemail">Yhteyshenkilön email:</label>
         <input
           type="text"
           th:field="*{yhteyshenkiloemail}"
           id="yhteyshenkiloemail"
           placeholder="yhteyshenkiloemail"
         />
+      </div>
+      <div>
         <button type="submit" class="btn btn-primary tuotenappi">
           Päivitä toimittajan tiedot
         </button>
+      </div>
       </form>
     </section>
     <footer th:replace="fragments/footer :: footer">
