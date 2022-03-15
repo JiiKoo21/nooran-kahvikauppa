@@ -15,23 +15,23 @@
   </head>
   <body>
     <header th:fragment="header">
-      <p class="punainenteksti">tämä on header-fragmentin alku</p>
-      <ul class="header-grid">
-        <li class="">
-          <a th:href="@{/}" class="">Kahvikauppa</a>
+      <ul class="navigointi">
+        <li class="etusivulle">
+          <a th:href="@{/}" class="format-link">Kahvikaupan etusivu</a>
         </li>
-        <li><a href="./kahvilaitteet">Kahvilaitteet</a></li>
-        <li><a href="./kulutustuotteet">Kulutustuotteet</a></li>
+
+        <li ><a href="./kahvilaitteet" class="format-link">Kahvilaitteet</a></li>
+        <li><a href="./kulutustuotteet" class="format-link">Kulutustuotteet</a></li>
       </ul>
-      <ul>
+      
+      <ul class="navigointi-2">
         <li>
-          <a href="">Rekisteröinti (VIP-asiakas)</a>
+          <a href="" class="format-link">Rekisteröidy VIP-asiakkaaksi</a>
         </li>
         <li>
-          <a href="./tuotteet">Tietojen hallinnointi (admin)</a>
+          <a href="./tuotteet" class="format-link">Tietojen hallinnointi (admin)</a>
         </li>
       </ul>
-      <p class="punainenteksti">tämä on header-fragmentin loppu</p>
     </header>
   </body>
 </html>
