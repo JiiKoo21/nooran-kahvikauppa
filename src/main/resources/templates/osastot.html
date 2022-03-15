@@ -43,14 +43,14 @@
             <td th:text="${osasto.nimi}"></td>
             <td th:text="${osasto.osastoIDP}"></td>
             <!-- <td>
-              <button class="btn btn-danger">
+              <button class="btn btn-dark">
                 <a th:href="|@{/osastot/poista/(osastoId=${osasto.id})}|"
                   >Poista</a
                 >
               </button>
             </td> -->
             <td>
-              <button class="btn btn-info">
+              <button class="btn btn-warning">
                 <a th:href="|@{/osastot/editosasto/{id}(id=${osasto.id})}|"
                   >Muokkaa</a
                 >

@@ -39,7 +39,7 @@
             <td th:text="${toimittaja.yhteyshenkilo}"></td>
             <td th:text="${toimittaja.yhteyshenkiloemail}"></td>
             <td>
-              <button class="btn btn-danger">
+              <button class="btn btn-dark">
                 <a
                   th:href="|@{/toimittajat/poista/(toimittajaId=${toimittaja.id})}|"
                   >Poista</a
@@ -47,7 +47,7 @@
               </button>
             </td>
             <td>
-              <button class="btn btn-info">
+              <button class="btn btn-warning">
                 <a th:href="|@{/toimittajat/edit/{id}(id=${toimittaja.id})}|"
                   >Muokkaa</a
                 >

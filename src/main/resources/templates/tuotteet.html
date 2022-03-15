@@ -42,14 +42,14 @@
             <td th:text="${tuote.valmistaja.nimi}"></td>
             <td th:text="${tuote.toimittaja.nimi}"></td>
             <td>
-              <button class="btn btn-danger">
+              <button class="btn btn-dark">
                 <a th:href="|@{/tuotteet/poista/(tuoteId=${tuote.id})}|"
                   >Poista</a
                 >
               </button>
             </td>
             <td>
-              <button class="btn btn-info">
+              <button class="btn btn-warning">
                 <a th:href="|@{/tuotteet/edittuote/{id}(id=${tuote.id})}|"
                   >Muokkaa</a
                 >
