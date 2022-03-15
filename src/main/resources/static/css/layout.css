@@ -82,3 +82,29 @@ footer {
   text-decoration: none;
   color: #fce0d1;
 }
+
+.kauppa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 1rem;
+  /* color: #4b4a4a; */
+  background-color: yellow;
+  list-style-type: none;
+}
+
+.grid-span {
+  grid-column: 1 / span 4;
+}
+.tuotespan1 {
+  grid-column: 1 / span 1;
+}
+.tuotespan2 {
+  grid-column: 2 / span 1;
+}
+.tuotespan3 {
+  grid-column: 3 / span 1;
+}
+.tuotespan4 {
+  grid-column: 4 / span 1;
+}
