@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fce0d1;
+  background-color: whitesmoke;
   /* font-size: 1.6rem; */
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 header {
-  background-color: #69013b;
+  background-color: maroon;
   text-decoration: none;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -41,15 +41,15 @@ header {
 }
 
 main {
-  color: #69013b;
+  color: maroon;
   text-align: center;
   padding-top: 12rem;
   padding-bottom: 2rem;
 }
 
 footer {
-  color: #fce0d1;
-  background-color: #69013b;
+  color: whitesmoke;
+  background-color: maroon;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 3rem;
@@ -87,7 +87,7 @@ footer {
 
 .format-link {
   text-decoration: none;
-  color: #fce0d1;
+  color: whitesmoke;
 }
 
 .kauppa-grid {
@@ -122,8 +122,8 @@ footer {
 
 .page-link {
   position: static;
-  color: #fce0d1;
-  background-color: #69013b;
+  color: whitesmoke;
+  background-color: maroon;
 }
 
 .page-item {
