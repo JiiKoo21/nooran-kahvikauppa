@@ -20,8 +20,8 @@
           <a th:href="@{/}" class="format-link">Kahvikaupan etusivu</a>
         </li>
 
-        <li><a href="./kahvilaitteet" class="format-link">KAHVILAITTEET</a></li>
-        <li><a href="./kulutustuotteet" class="format-link">KULUTUSTUOTTEET</a></li>
+        <li><a th:href="@{/kahvilaitteet}" class="format-link">KAHVILAITTEET</a></li>
+        <li><a th:href="@{/kulutustuotteet}" class="format-link">KULUTUSTUOTTEET</a></li>
       </ul>
       
       <ul class="navigointi-2">
@@ -32,7 +32,7 @@
           <a href="" class="format-link">Rekisteröidy VIP-asiakkaaksi</a>
         </li>
         <li>
-          <a href="./tuotteet" class="format-link">Tietojen hallinnointi (admin)</a>
+          <a th:href="@{/tuotteet}" class="format-link">Tietojen hallinnointi (admin)</a>
         </li>
       </ul>
     </header>
