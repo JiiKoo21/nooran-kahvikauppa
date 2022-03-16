@@ -37,7 +37,7 @@
         <tbody>
           <tr th:each="tuote : ${tuotteet}">
             <td th:text="${tuote.nimi}"></td>
-            <td><span th:text="${tuote.hinta}"></span> €</td>
+            <td><span th:text="${tuote.hinta}"></span> e</td>
             <td th:text="${tuote.osasto.nimi}"></td>
             <td th:text="${tuote.valmistaja.nimi}"></td>
             <td th:text="${tuote.toimittaja.nimi}"></td>

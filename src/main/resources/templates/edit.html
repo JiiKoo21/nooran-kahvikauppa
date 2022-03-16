@@ -17,9 +17,9 @@
     <header th:replace="fragments/header :: header">
       <p>header with links etc</p>
     </header>
-
-    <button class="btn btn-dark takaisin">
-      <a href="./../../toimittajat">Takaisin</a>
+<div class="edit-asemointi">
+    <button class="edit-takaisin">
+      <a th:href="@{/toimittajat}">Takaisin</a>
     </button>
 
     <section class="pageview">
@@ -71,6 +71,7 @@
       </div>
       </form>
     </section>
+  </div>
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
     </footer>

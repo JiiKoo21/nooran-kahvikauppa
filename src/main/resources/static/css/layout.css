@@ -138,5 +138,45 @@ footer {
 }
 
 .pageview {
-  padding-top: 12rem;
+  padding-top: 2rem;
+}
+
+.tuotetiedot-asemointi {
+  padding-top: 10rem;
+  }
+
+.tuotetiedot-takaisin {
+  background-color: lime;
+}
+
+.edittuote-asemointi {
+  padding-top: 13rem;
+  }
+
+.edittuote-takaisin {
+  background-color: lime;
+}
+
+.muokkaa-asemointi {
+  padding-top: 13rem;
+  }
+
+.muokkaa-takaisin {
+  background-color: lime;
+}
+
+.edit-asemointi {
+  padding-top: 13rem;
+  }
+
+.edit-takaisin {
+  background-color: lime;
+}
+
+.editosasto-asemointi {
+  padding-top: 13rem;
+  }
+
+.editosasto-takaisin {
+  background-color: lime;
 }

@@ -17,9 +17,9 @@
     <header th:replace="fragments/header :: header">
       <p>header with links etc</p>
     </header>
-
-    <button class="btn btn-dark takaisin">
-      <a href="./../../tuotteet">Takaisin</a>
+<div class="edittuote-asemointi">
+    <button class="edittuote-takaisin">
+      <a th:href="@{/tuotteet}">Takaisin</a>
     </button>
 
     <section class="pageview">
@@ -36,7 +36,7 @@
           </p>
           <p>
             <span class="bold">Tuotteen hinta: </span>
-            <span th:text="${tuote.hinta}">hinta</span>€
+            <span th:text="${tuote.hinta}">hinta</span> e
           </p>
           <p>
             <span class="bold">Osasto: </span>
@@ -117,6 +117,7 @@
       </div>
       </form>
     </section>
+  </div>
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
     </footer>

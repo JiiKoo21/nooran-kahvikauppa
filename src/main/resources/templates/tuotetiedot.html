@@ -18,10 +18,11 @@
       <p>header with links etc</p>
     </header>
 
+    <div class="tuotetiedot-asemointi">
     <section class="page-container">
-      <!-- <button class="btn btn-dark takaisin">
-        <a href="./../../kahvilaitteet">Takaisin</a>
-      </button> -->
+      <button class="tuotetiedot-takaisin">
+        <a th:href="@{/kahvilaitteet}">Takaisin</a>
+      </button>
       <section class="pageview container-tuotetiedot">
         <section class="tuotetiedot">
           <h2 class="h2-tuotetiedot">
@@ -38,6 +39,7 @@
         </figure>
       </section>
     </section>
+  </div>
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
     </footer>
