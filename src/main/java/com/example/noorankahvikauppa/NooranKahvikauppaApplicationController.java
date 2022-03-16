@@ -16,6 +16,7 @@ import com.example.noorankahvikauppa.ToimittajaService;
 import com.example.noorankahvikauppa.TuoteService;
 import com.example.noorankahvikauppa.ValmistajaService;
 
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.data.domain.Page;
@@ -23,6 +24,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -343,5 +345,38 @@ public String naytaKulutustuote(@PathVariable("id") long id, Model model) {
 public byte[] getKuvaKulutustuote(@PathVariable Long id) {
     return tuoteService.getTuoteById(id).getKuva();
 }
+
+
+// REKISTERÖINTI VIP-ASIAKKAAKSI
+
+    @Autowired
+    private RegistrationRepo registrationRepo;
+
+    @ModelAttribute
+    private Registration getRegistration() {
+        return new Registration();
+    }
+
+    @GetMapping("/form")
+    public String viewForm() {
+        return "form";
+    }
+
+    @PostMapping("/form")
+    public String register(
+            @Valid @ModelAttribute Registration registration,
+            BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "form";
+        }
+
+        registrationRepo.save(registration);
+        return "redirect:/success";
+    }
+
+    @GetMapping("/success")
+    public String viewSuccess() {
+        return "success";
+    }
 
 }

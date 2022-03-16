@@ -44,7 +44,7 @@ main {
   color: maroon;
   text-align: center;
   padding-top: 14rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 footer {
@@ -53,6 +53,7 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 3rem;
+  text-align: center;
 }
 
 .navigointi {
@@ -180,3 +181,13 @@ footer {
 .editosasto-takaisin {
   background-color: lime;
 }
+
+.form-asemointi {
+  padding-top: 14rem;
+  padding-left: 1rem;
+  }
+
+  .success-asemointi {
+    padding-top: 14rem;
+    padding-left: 1rem;
+  }
