@@ -225,3 +225,7 @@ footer {
 .teal-text {
   color: teal;
 }
+
+.text-bold {
+  font-weight: bold;
+}
