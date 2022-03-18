@@ -254,7 +254,7 @@ public String naytaEkaSivu(Model model) {
 public String naytaKahvilaitteet(Model model, @PathVariable(name = "sivunum") Integer sivunum) {
     List<Tuote> tuotteet = new ArrayList<Tuote>();
     List<Long> kahvilaitteet = Arrays.asList(3L, 4L, 5L);
-    Pageable pageable = PageRequest.of(sivunum - 1, 18);
+    Pageable pageable = PageRequest.of(sivunum - 1, 12);
     Page<Tuote> tuotesivut = tuoteService.listaaHalututTuotteet(kahvilaitteet, pageable);
     tuotteet = tuotesivut.getContent();
     Integer totalSivut = tuotesivut.getTotalPages();
@@ -303,7 +303,7 @@ public String naytaKulutusEkaSivu(Model model) {
 public String naytaKulutustuotteet(Model model, @PathVariable(name = "sivunum") Integer sivunum) {
     List<Tuote> tuotteet = new ArrayList<Tuote>();
     List<Long> kulutustuotteet = Arrays.asList(6L, 8L, 9L);
-    Pageable pageable = PageRequest.of(sivunum - 1, 18);
+    Pageable pageable = PageRequest.of(sivunum - 1, 12);
     Page<Tuote> tuotesivut = tuoteService.listaaHalututTuotteet(kulutustuotteet, pageable);
     tuotteet = tuotesivut.getContent();
     Integer totalSivut = tuotesivut.getTotalPages();
