@@ -17,6 +17,7 @@
     <header th:replace="fragments/header :: header">
       <p>header with links etc</p>
     </header>
+    <div class="tuotteet-asemointi">
     <nav th:replace="fragments/admin-nav :: admin-nav">
       <p>header with links etc</p>
     </nav>
@@ -42,16 +43,16 @@
             <td th:text="${tuote.valmistaja.nimi}"></td>
             <td th:text="${tuote.toimittaja.nimi}"></td>
             <td>
-              <button class="btn btn-dark">
+              <button class="btn btn-danger">
                 <a th:href="|@{/tuotteet/poista/(tuoteId=${tuote.id})}|"
-                  >Poista</a
+                  ><span class="white-text">Poista</span></a
                 >
               </button>
             </td>
             <td>
               <button class="btn btn-warning">
                 <a th:href="|@{/tuotteet/edittuote/{id}(id=${tuote.id})}|"
-                  >Muokkaa</a
+                  ><span class="black-text">Muokkaa</span></a
                 >
               </button>
             </td>
@@ -149,6 +150,7 @@
         <button type="submit" class="btn btn-primary">Lisää tuote</button>
       </form>
     </div>
+  </div>
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
     </footer>

@@ -16,21 +16,21 @@
   <body>
     <nav th:fragment="admin-nav" class="nav-kauppa">
       <h1>Tietojen hallinnointi (admin)</h1>
-      <p>Voit vaihtaa aktiivista osiota/listaa klikkaamalla alla kirkkaankeltaisella pohjalla olevia linkkejä</p>
-      <p>Lisää uusia tuotteita, toimittajia ja valmistajia listan jäljessä olevalla lomakkeella</p>
-      <p>Olemassa olevia tuotteita, toimittajia ja valmistajia on mahdollista muokata ja poistaa rivikohtaisilla toiminnoilla</p>
+      <p>Voit vaihtaa aktiivista osiota klikkaamalla alla turkoosissa nauhassa olevia linkkejä</p>
+      <p>Tee lisäyksiä kunkin listan jäljessä olevalla lomakkeella</p>
+      <p>Olemassa olevia tietoja on mahdollista muokata ja poistaa rivikohtaisilla toiminnoilla</p>
       <ul class="kauppa-grid">
         <li class="tuotespan1">
-          <a th:href="@{/tuotteet}" class="nav-a">Tuotteet</a>
+          <a th:href="@{/tuotteet}" class="nav-a">TUOTTEET</a>
         </li>
         <li class="tuotespan2">
-          <a th:href="@{/valmistajat}" class="nav-a">Valmistajat</a>
+          <a th:href="@{/valmistajat}" class="nav-a">VALMISTAJAT</a>
         </li>
         <li class="tuotespan3">
-          <a th:href="@{/toimittajat}" class="nav-a">Toimittajat</a>
+          <a th:href="@{/toimittajat}" class="nav-a">TOIMITTAJAT</a>
         </li>
         <li class="tuotespan4">
-          <a th:href="@{/osastot}" class="nav-a">Osastot</a>
+          <a th:href="@{/osastot}" class="nav-a">OSASTOT</a>
         </li>
       </ul>
     </nav>

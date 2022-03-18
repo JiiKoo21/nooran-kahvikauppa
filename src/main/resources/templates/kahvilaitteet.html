@@ -17,7 +17,7 @@
     <header th:replace="fragments/header :: header">
       <p></p>
     </header>
-    
+    <div class="kahvilaitteet-asemointi">
     <h1 class="nav-kauppa">Kahvilaitteet</h1>
   
     <!-- <nav th:replace="fragments/nav :: nav">
@@ -56,11 +56,12 @@
           <a
             th:href="@{kahvilaitteet/tuotetiedot/{id}(id=${kahvilaite.id})}"
             class="btn btn-primary"
-            >Näytä lisää</a
+            >Tuotesivu</a
           >
         </div>
       </div>
     </section>
+  </div>
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
     </footer>

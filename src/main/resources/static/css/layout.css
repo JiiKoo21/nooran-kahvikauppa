@@ -8,6 +8,10 @@ body {
   /* font-size: 1.6rem; */
 }
 
+a {
+  text-decoration: none;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -21,7 +25,7 @@ body {
   width: 300px;
   padding: 2rem;
   margin: 10px;
-  border: solid lightgray 3px;
+  border: solid gray 3px;
   position: static;
 }
 
@@ -104,7 +108,7 @@ footer {
   grid-template-rows: auto;
   padding: 1rem;
   /* color: #4b4a4a; */
-  background-color: yellow;
+  background-color: teal;
   list-style-type: none;
 }
 
@@ -144,50 +148,76 @@ footer {
 
 .tuotetiedot-asemointi {
   padding-top: 10rem;
-  }
-
-.tuotetiedot-takaisin {
-  background-color: lime;
+  padding-left: 1rem;
 }
 
 .edittuote-asemointi {
   padding-top: 13rem;
-  }
-
-.edittuote-takaisin {
-  background-color: lime;
+  padding-left: 1rem;
 }
 
 .muokkaa-asemointi {
   padding-top: 13rem;
-  }
-
-.muokkaa-takaisin {
-  background-color: lime;
+  padding-left: 1rem;
 }
 
 .edit-asemointi {
   padding-top: 13rem;
-  }
-
-.edit-takaisin {
-  background-color: lime;
+  padding-left: 1rem;
 }
 
 .editosasto-asemointi {
   padding-top: 13rem;
-  }
-
-.editosasto-takaisin {
-  background-color: lime;
+  padding-left: 1rem;
 }
 
 .form-asemointi {
   padding-top: 14rem;
   padding-left: 1rem;
-  }
+}
 
-  .success-asemointi {
-    padding-top: 14rem;
-    padding-left: 1rem;
-  }
+.success-asemointi {
+  padding-top: 14rem;
+  padding-left: 1rem;
+}
+
+.kahvilaitteet-asemointi {
+  padding-left: 1rem;
+}
+
+.kulutustuotteet-asemointi {
+  padding-left: 1rem;
+}
+
+.tuotteet-asemointi {
+  padding-left: 1rem;
+}
+
+.valmistajat-asemointi {
+  padding-left: 1rem;
+}
+
+.toimittajat-asemointi {
+  padding-left: 1rem;
+}
+
+.osastot-asemointi {
+  padding-left: 1rem;
+}
+
+.tuotenappi {
+  margin-top: 1rem;
+}
+
+.nav-a {
+  font-weight: bold;
+  color: white;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
