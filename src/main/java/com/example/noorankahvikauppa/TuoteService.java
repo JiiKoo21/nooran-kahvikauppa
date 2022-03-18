@@ -2,8 +2,8 @@ package com.example.noorankahvikauppa;
 
 import java.util.List;
 
-import com.example.noorankahvikauppa.Tuote;
-import com.example.noorankahvikauppa.TuoteRepo;
+// import com.example.noorankahvikauppa.Tuote;
+// import com.example.noorankahvikauppa.TuoteRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;

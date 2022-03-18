@@ -2,8 +2,8 @@ package com.example.noorankahvikauppa;
 
 import java.util.List;
 
-import com.example.noorankahvikauppa.Valmistaja;
-import com.example.noorankahvikauppa.ValmistajaRepo;
+// import com.example.noorankahvikauppa.Valmistaja;
+// import com.example.noorankahvikauppa.ValmistajaRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

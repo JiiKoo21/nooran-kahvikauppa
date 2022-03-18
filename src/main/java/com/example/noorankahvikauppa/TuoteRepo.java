@@ -3,7 +3,7 @@ package com.example.noorankahvikauppa;
 import java.util.Collection;
 import java.util.List;
 
-import com.example.noorankahvikauppa.Tuote;
+// import com.example.noorankahvikauppa.Tuote;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

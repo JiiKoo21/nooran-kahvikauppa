@@ -1,6 +1,6 @@
 package com.example.noorankahvikauppa;
 
-import com.example.noorankahvikauppa.Osasto;
+// import com.example.noorankahvikauppa.Osasto;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

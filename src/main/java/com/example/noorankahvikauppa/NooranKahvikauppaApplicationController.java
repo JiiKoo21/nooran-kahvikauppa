@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.example.noorankahvikauppa.Osasto;
-import com.example.noorankahvikauppa.Toimittaja;
-import com.example.noorankahvikauppa.Tuote;
-import com.example.noorankahvikauppa.Valmistaja;
-import com.example.noorankahvikauppa.OsastoService;
-import com.example.noorankahvikauppa.ToimittajaService;
-import com.example.noorankahvikauppa.TuoteService;
-import com.example.noorankahvikauppa.ValmistajaService;
+// import com.example.noorankahvikauppa.Osasto;
+// import com.example.noorankahvikauppa.Toimittaja;
+// import com.example.noorankahvikauppa.Tuote;
+// import com.example.noorankahvikauppa.Valmistaja;
+// import com.example.noorankahvikauppa.OsastoService;
+// import com.example.noorankahvikauppa.ToimittajaService;
+// import com.example.noorankahvikauppa.TuoteService;
+// import com.example.noorankahvikauppa.ValmistajaService;
 
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
