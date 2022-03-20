@@ -151,6 +151,11 @@
       </form>
     </div>
   </div>
+
+  <form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
     </footer>
