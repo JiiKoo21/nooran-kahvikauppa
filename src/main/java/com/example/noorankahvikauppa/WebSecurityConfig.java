@@ -15,9 +15,17 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
+		// // mahdollistetaan h2-konsolin käyttö
+		// http.csrf().disable();
+		// http.headers().frameOptions().sameOrigin();
+		
 		http
 			.authorizeRequests()
 				.antMatchers("/", "/index").permitAll()
+				.antMatchers("/form", "/success").permitAll()
+				.antMatchers("/kahvilaitteet", "/kulutustuotteet", "/kahvilaitteet/**", "/kulutustuotteet/**", "/kahvilaitteet/tuotetiedot", "/kulutustuotteet/tuotetiedot", "/kahvilaitteet/tuotetiedot/**", "/kulutustuotteet/tuotetiedot/**", "/tuotetiedot/**").permitAll()
+				.antMatchers("/h2-console", "/h2-console/**").permitAll()
+				.antMatchers("/css/**", "/images/**").permitAll()
 				.anyRequest().authenticated()
 				.and()
 			.formLogin()
@@ -34,7 +42,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		UserDetails user =
 			 User.withDefaultPasswordEncoder()
 				.username("admin")
-				.password("DerKaffee2022")
+				.password("Kaffee2022")
 				.roles("ADMIN")
 				.build();
 
