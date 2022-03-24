@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.authorizeRequests()
 				.antMatchers("/", "/index").permitAll()
 				.antMatchers("/form", "/success").permitAll()
-				.antMatchers("/kahvilaitteet", "/kulutustuotteet", "/kahvilaitteet/**", "/kulutustuotteet/**", "/kahvilaitteet/tuotetiedot", "/kulutustuotteet/tuotetiedot", "/kahvilaitteet/tuotetiedot/**", "/kulutustuotteet/tuotetiedot/**", "/tuotetiedot/**").permitAll()
+				.antMatchers("/kahvilaitteet", "/kulutustuotteet", "/kahvilaitteet/**", "/kulutustuotteet/**", "/kahvilaitteet/tuotetiedot", "/kulutustuotteet/tuotetiedot-kt", "/kahvilaitteet/tuotetiedot/**", "/kulutustuotteet/tuotetiedot-kt/**", "/tuotetiedot/**", "/tuotetiedot-kt/**").permitAll()
 				.antMatchers("/h2-console", "/h2-console/**").permitAll()
 				.antMatchers("/css/**", "/images/**").permitAll()
 				.anyRequest().authenticated()

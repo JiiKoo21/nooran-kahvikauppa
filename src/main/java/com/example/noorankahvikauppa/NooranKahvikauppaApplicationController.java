@@ -330,14 +330,14 @@ public byte[] getKuvatKulutustuotteet(@PathVariable Long id) {
     return tuoteService.getTuoteById(id).getKuva();
 }
 
-@GetMapping("/kulutustuotteet/tuotetiedot/{id}")
+@GetMapping("/kulutustuotteet/tuotetiedot-kt/{id}")
 public String naytaKulutustuote(@PathVariable("id") Long id, Model model) {
     Tuote tuote = tuoteService.getTuoteById(id);
     model.addAttribute("tuote", tuote);
     model.addAttribute("valmistajat", valmistajaService.listaaValmistajat());
     model.addAttribute("osastot", osastoService.listaaOsastot());
     model.addAttribute("toimittajat", toimittajaService.listaaToimittajat());
-    return "tuotetiedot";
+    return "tuotetiedot-kt";
 }
 
 @GetMapping(path = "/tuotetiedot/{id}/content", produces = "image/jpg")
