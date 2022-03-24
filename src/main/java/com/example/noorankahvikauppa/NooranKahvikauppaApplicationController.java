@@ -282,7 +282,7 @@ public byte[] getKuvat(@PathVariable Long id) {
 }
 
 @GetMapping("/kahvilaitteet/tuotetiedot/{id}")
-public String naytaKahvilaite(@PathVariable("id") long id, Model model) {
+public String naytaKahvilaite(@PathVariable("id") Long id, Model model) {
     Tuote tuote = tuoteService.getTuoteById(id);
     model.addAttribute("tuote", tuote);
     model.addAttribute("valmistajat", valmistajaService.listaaValmistajat());
@@ -331,7 +331,7 @@ public byte[] getKuvatKulutustuotteet(@PathVariable Long id) {
 }
 
 @GetMapping("/kulutustuotteet/tuotetiedot/{id}")
-public String naytaKulutustuote(@PathVariable("id") long id, Model model) {
+public String naytaKulutustuote(@PathVariable("id") Long id, Model model) {
     Tuote tuote = tuoteService.getTuoteById(id);
     model.addAttribute("tuote", tuote);
     model.addAttribute("valmistajat", valmistajaService.listaaValmistajat());
