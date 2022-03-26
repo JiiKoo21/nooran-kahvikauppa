@@ -229,3 +229,30 @@ footer {
 .text-bold {
   font-weight: bold;
 }
+
+.parent-logout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.form-logout {
+}
+
+.section-logout {
+  padding-top: 11.5rem;
+}
+
+.logout-form {
+  color: red;
+  background-color: yellow;
+  border-color: red;
+  border-width: thick;
+  padding: 1rem 3rem 1rem 3rem;
+  font-weight: bold;
+}
+
+.admin-nav-padding { 
+}

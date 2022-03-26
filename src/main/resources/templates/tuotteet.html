@@ -18,6 +18,9 @@
       <p>header with links etc</p>
     </header>
     <div class="tuotteet-asemointi">
+
+      <section th:replace="fragments/logout :: logout"></section>
+
     <nav th:replace="fragments/admin-nav :: admin-nav">
       <p>header with links etc</p>
     </nav>
@@ -152,9 +155,9 @@
     </div>
   </div>
 
-  <form th:action="@{/logout}" method="post">
+  <!-- <form th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out"/>
-</form>
+</form> -->
 
     <footer th:replace="fragments/footer :: footer">
       <p class="footer"></p>
