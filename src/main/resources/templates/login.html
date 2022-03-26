@@ -6,15 +6,18 @@
     </head>
     <body>
         <div th:if="${param.error}">
-            Invalid username and password.
+            Virheellinen käyttäjätunnus tai salasana.
         </div>
         <div th:if="${param.logout}">
-            You have been logged out.
+            Olet kirjautunut ulos onnistuneesti.
+            <p>Voit siirtyä Kahvikaupan etusivulle klikkaamalla <a th:href="@{/}">tästä</a></p>
+            <hr>
+            <p>Tai kirjaudu uudestaan alta.</p>
         </div>
         <form th:action="@{/login}" method="post">
-            <div><label> User Name : <input type="text" name="username"/> </label></div>
-            <div><label> Password: <input type="password" name="password"/> </label></div>
-            <div><input type="submit" value="Sign In"/></div>
+            <div><label> Käyttäjätunnus : <input type="text" name="username"/> </label></div>
+            <div><label> Salasana: <input type="password" name="password"/> </label></div>
+            <div><input type="submit" value="Kirjaudu"/></div>
         </form>
     </body>
 </html>
