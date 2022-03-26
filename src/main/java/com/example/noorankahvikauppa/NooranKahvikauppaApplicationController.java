@@ -379,4 +379,10 @@ public byte[] getKuvaKulutustuote(@PathVariable Long id) {
         return "success";
     }
 
+    @GetMapping("/vip-asiakkaat")
+    public String listVips(Model model) {
+        model.addAttribute("registrations", registrationRepo.findAll());
+        return "vip-asiakkaat";
+    }
+
 }
