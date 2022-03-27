@@ -16,9 +16,14 @@
   <body>
     <nav th:fragment="admin-nav" class="admin-nav-padding">
       <h1>Tietojen hallinnointi (admin)</h1>
-      <p>Voit vaihtaa aktiivista osiota klikkaamalla alla turkoosissa nauhassa olevia linkkejä</p>
-      <p>Tee lisäyksiä kunkin listan jäljessä olevalla lomakkeella</p>
-      <p>Olemassa olevia tietoja on mahdollista muokata ja poistaa rivikohtaisilla toiminnoilla</p>
+      <p>Ohje hallinnoijalle:</p>
+      <ul>
+        <li>Voit vaihtaa aktiivista osiota klikkaamalla alla turkoosissa nauhassa olevia linkkejä, aktiivisen osion tietosisältö näytetään nauhan alapuolella taulukkomuodossa</li>
+        <li>Tuotteet/Valmistajat/Toimittajat/Osastot: tee lisäyksiä kunkin listan jäljessä olevalla lomakkeella</li>
+        <li>Tuotteet/Valmistajat/Toimittajat/Osastot: muokkaa ja poista olemassa olevia tietoja rivikohtaisilla toiminnoilla (huomaa että Osastoja ei ole mahdollista poistaa)</li>
+        <li>VIP-asiakkaat: tämänhetkisten VIP-asiakkaiden tiedot asiakasrekisterissä (huomaa että asiakastietojen muokkaukset ja poistot tekee Kahvikaupan asiakaspalvelu joka on tietosuoja-asetuksen tarkoittama varsinainen rekisterinpitäjä)</li>
+        <li>Voit kirjautua ulos admin-tilasta klikkaamalla näkymän oikeassa yläkulmassa olevaa kirkkaankeltaista toimintopainiketta</li>
+      </ul>
       <ul class="kauppa-grid">
         <li class="tuotespan1">
           <a th:href="@{/tuotteet}" class="nav-a">TUOTTEET</a>
